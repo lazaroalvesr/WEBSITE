@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    background-image: url(./images/dev.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.container {
+    max-width: 1400px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+        url(images/dev.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+.container nav ul li {
+    list-style: none;
+    display: flex;
+
+}
+
+.container nav {
+    align-items: center;
+    padding-top: 5px;
+
+    margin: 0 0 0 17em;
+}
+
+.container .text-box {
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+
+.container .text-box p {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.container .text-box h1 {
+    font-size: 39px;
+    line-height: 160px;
+    color: #fff;
+
+}
+
+.container nav ul li a {
+    list-style: none;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 29px;
+}
+
+.text-box h3 {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.text-box .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.text-box a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    position: absolute;
+    left: 86%;
+    bottom: 27%;
+    align-items: center;
+
+}
+
+.social-icon img {
+    width: 29px;
+    display: flex;
+    margin: 24px 5px;
+    bottom: 122px;
+}
+
+.social-icon #twitter {
+    position: relative;
+    width: 49px;
+    right: 8px;
+    bottom: 12px;
+}
+
+#portifolio {
+    display: block;
+}
+
+#portifolio h3 {
+    color: #fff;
+    padding: 12px;
+    width: 410px;
+}
+
+#portifolio h2 {
+    color: #fff;
+    margin: 37px 0 0 29px;
+}
+
+#portifolio #fotos img {
+    width: 340px;
+    padding: 52px 0 0 69px;
+}
+
+#contato {
+    height: 44em;
+    width: 100%;
+    display: block;
+}
+
+#contato h1 {
+    color: #fff;
+    font-size: 30px;
+    top: 2em;
+    position: relative;
+    text-align: center;
+}
+
+#contato .form {
+    width: 100%;
+    margin-top: 69px;
+    left: 24em;
+    max-width: 32rem;
+    font-size: 1.125rem;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+    display: block;
+    width: 90%;
+    margin: 0 0 0 20px;
+
+}
+
+.form label {
+    color: #fff;
+    line-height: 1;
+}
+
+.form input,
+.form textarea {
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea {
+    min-height: 13rem;
+    resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+    outline: none;
+    border-color: #09d;
+    box-shadow: 0 0 0 3px #4dc8ff;
+}
+
+.form button {
+    display: block;
+    padding: 1rem;
+    background: #0072c4;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form button:hover,
+.form button:focus {
+    outline: none;
+    background: #09d;
+}
+
+footer {
+    color: #fff;
+    position: relative;
+    margin-left: 29%;
+    top: 7em;
+}
+
+@media (min-width: 700px) {
+    html{
+        height: 2190px;
+    }
+    .container .text-box h1 {
+        font-size: 100px;
+        line-height: 160px;
+    }
+
+    .container .text-box p {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .container .text-box h3 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .container .text-box a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin-right: 20px;
+        border: 2px solid #fff;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .container nav ul {
+        flex: 1;
+        text-align: right;
+
+    }
+
+    .container nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 30px;
+    }
+
+    .container nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .container nav ul li a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -5px;
+        left: 30%;
+        transform: translateY(-50%);
+        background: #fff;
+        transition: width 0.3s;
+    }
+
+    .container nav ul li a:hover::after {
+        width: 50%;
+
+    }
+
+    .text-box a span {
+        font-size: 30px;
+        line-height: 15px;
+        margin-left: 5px;
+    }
+
+    .social-icon {
+        position: absolute;
+        right: 5%;
+        bottom: 8%;
+    }
+
+    .social-icon img {
+        width: 25px;
+        display: block;
+        margin: 25px 5px;
+    }
+
+    .social-icon #twitter {
+        position: relative;
+        right: 4px;
+        bottom: 1em;
+    }
+
+    #portifolio h3 {
+        color: #fff;
+        font-size: 29px;
+        width: 940px;
+        left: 18%;
+        top: 3em;
+        position: relative;
+    }
+
+    #portifolio #fotos {
+        display: flex;
+        padding-top: 159px;
+        justify-content: center;
+        gap: 26px;
+    }
+
+    #portifolio #fotos img {
+        width: 450px;
+        padding-top: 15px;
+        display: flex;
+    }
+
+    #contato {
+        height: 44em;
+        width: 100%;
+    }
+    
+    #contato h1 {
+        color: #fff;
+        font-size: 30px;
+        top: 4em;
+        position: relative;
+        text-align: center;
+    }
+    
+    #contato .form {
+        width: 100%;
+        top: 59px;
+        left: 24em;
+        position: relative;
+        max-width: 32rem;
+        font-size: 1.125rem;
+    }
+    
+    .form label,
+    .form input,
+    .form textarea,
+    .form button {
+        display: block;
+        width: 100%;
+    }
+    
+    .form label {
+        color: #fff;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+    
+    .form input,
+    .form textarea {
+        font: inherit;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        transition: border-color, box-shadow 0.2s;
+    }
+    
+    .form textarea {
+        min-height: 13rem;
+        resize: vertical;
+    }
+    
+    .form input:hover,
+    .form input:focus,
+    .form textarea:hover,
+    .form textarea:focus {
+        outline: none;
+        border-color: #09d;
+        box-shadow: 0 0 0 3px #4dc8ff;
+    }
+    
+    .form button {
+        display: block;
+        padding: 1rem;
+        background: #0072c4;
+        color: #fff;
+        font: inherit;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    
+    .form button:hover,
+    .form button:focus {
+        outline: none;
+        background: #09d;
+    }
+
+}

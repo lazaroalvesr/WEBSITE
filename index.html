@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <!-- CONTEUDO DA FOTO INICIAL APRESENTAÇÃO-->
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#fotos">Projetos</a></li>
+                <li><a href="#portifolio">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="text-box">
+            <p>Eu sou</p>
+            <h1>Lázaro Alves R</h1>
+            <h3>Desenvolvedor Front-end</h3>
+
+            <div class="row">
+                <a href="./images/Curriculo (1).pdf">Explore meu Curriculo</a>
+            </div>
+        </div>
+        <div class="social-icon">
+            <a href="https://github.com/lazaroalvesr"><img src="./images/5968866.png" id="git"></a>
+            <a href="https://www.linkedin.com/in/l%C3%A1zaro-alves-r/"><img src="./images/174857.png"></a>
+            <a href="https://www.instagram.com/lazaro_alves_r/"><img src="./images/instagram.png"></a>
+            <a href="https://twitter.com/Alves_RRk"><img src="./images/twit.png" id="twitter"></a>
+        </div>
+    </div>
+    <section id="portifolio">
+        <h3>Sou um Desenvolvedor Front-End Jr com conheciemnto em HTML5, CSS3 e tenho conhecimentos básicos em
+            JavaScript.<br>
+            Tenho agilidade em aprender rápido, boa comunicação ,trabalho em equipe.<br>
+            Sou PCD CID (M41.4), (G82.0).
+        </h3>
+        
+        <div id="fotos">
+            <div class="col1">
+                <div class="ft01">
+                    <img src="./images/Sistema.png">
+                </div>
+                <div class="ft01">
+                    <img src="./images/JEEP.png">
+                </div>
+            </div>
+            <div class="col2">
+                <div class="ft01">
+                    <img src="./images/Pokedex.png">
+                </div>
+                <div class="ft01">
+                    <img src="./images/Tempo.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato">
+        <h1>Formulário de contato</h1>
+        <form target="_blank" action="https://formsubmit.co/lazaroalves12355@gmail.com" method="POST" class="form">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Nome" required />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required />
+            <label for="message">Mensagem</label>
+            <textarea name="messagem" id="message" placeholder="Mensagem"></textarea>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+            <button type="submit">Enviar</button>
+        </form>
+        <footer>&copy Criado por Lazaro Alves R</footer>
+
+
+</body>
+
+</html>
